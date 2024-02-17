@@ -87,7 +87,7 @@ const liketheBlog = asyncHandler(async (req, res) => {
       },
       { new: true }
     );
-    res.json(blog);
+    // res.json(blog);
   }
   if (isLiked) {
     const blog = await Blog.findByIdAndUpdate(
@@ -133,7 +133,7 @@ const disliketheBlog = asyncHandler(async (req, res) => {
       },
       { new: true }
     );
-    res.json(blog);
+    // res.json(blog);
   }
   if (isDisLiked) {
     const blog = await Blog.findByIdAndUpdate(
